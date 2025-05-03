@@ -32,7 +32,7 @@ export class UsersController {
     return this.UserServiceService.update(documento, paylod);
   }
 
-  @Delete(':documento')
+  @Delete('/:documento')
   Delete(@Param('documento') documento: string) {
     return this.UserServiceService.remove(documento);
   }
